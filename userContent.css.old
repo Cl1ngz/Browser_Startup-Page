@@ -1,0 +1,4 @@
+/* darkreader for pdf */
+html[mozdisallowselectionprint] #viewer {
+  filter: grayscale(1) invert(1) sepia(1) contrast(75%) !important;
+}
