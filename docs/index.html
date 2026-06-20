@@ -1,66 +1,106 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>startpage</title>
+        <link rel="icon" type="image/x-icon" href="icons/favicon.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script src="time.js"></script>
+    </head>
 
-  <head>
-    <meta charset="UTF-8">
-    <title>startpage</title>
-    <link rel="icon" type="image/x-icon" href="icons/favicon.png">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src='time.js'></script>
-  </head>
-     
-  <body onload="realtimeClock()">   
-    <div class="time">
-      <div id="clock"></div>
-    </div>
+    <body onload="realtimeClock()">
+        <div class="time">
+            <div id="clock"></div>
+        </div>
 
-      <div class="title">Welcome back to $HOME</div>
-    
-    <div class="bookmark">
-      <div class="category">
-        <div class="bookmarks">
-          <li><a href="https://github.com/">GitHub</a></li>
-          <li><a href="https://wiki.hyprland.org/">Hyprland</a></li>
-          <li><a href="https://aur.chaotic.cx/packages">CHaoticAUR</a></li>
-          <li><a href="https://aur.archlinux.org/packages">AUR</a></li>
-        </div>
-      </div>
+        <div class="title">Welcome back to $HOME</div>
 
-      <div class="category">
-        <div class="bookmarks">
-          <li><a href="https://www.goodreads.com/">GoodReads</a></li>
-          <li><a href="https://app.thestorygraph.com/">StoryGraph</a></li>
-          <li><a href="http://127.0.0.1:8384">Syncthing</a></li>
-          <li><a href="127.0.0.1">localhost</a></li>
+        <div class="search">
+            <form action="https://duckduckgo.com/" method="get">
+                <input
+                    type="text"
+                    name="q"
+                    placeholder="Search..."
+                    autocomplete="off"
+                    autofocus
+                />
+            </form>
         </div>
-      </div>
 
-      <div class="category">
-        <div class="bookmarks">
-          <li><a href="https://www.youtube.com/">YouTube</a></li>
-          <li><a href="https://www.reddit.com/r/unixporn/">Unixporn</a></li>
-          <li><a href="https://twitter.com/home">Twitter</a></li>
-          <li><a href="">...</a></li>
-        </div>
-      </div>
+        <div class="bookmark">
+            <div class="category">
+                <div class="category-title">Doc</div>
+                <div class="bookmarks">
+                    <li><a href="https://github.com/">GitHub</a></li>
+                    <li><a href="https://wiki.hyprland.org/">Hyprland</a></li>
+                    <li>
+                        <a href="https://packages.cachyos.org/"
+                            >CashyOs packages</a
+                        >
+                    </li>
+                    <li>
+                        <a href="https://aur.archlinux.org/packages">AUR</a>
+                    </li>
+                </div>
+            </div>
 
-      <div class="category">
-        <div class="bookmarks">
-          <li><a href="https://www.chess.com/">Chess.com</a></li>
-          <li><a href="https://lichess.org/">Lichess.org</a></li>
-          <li><a href="https://monkeytype.com/">MonkeyType</a></li>
-          <li><a href="">...</a></li>
+            <div class="category">
+                <div class="category-title">Dev</div>
+                <div class="bookmarks">
+                    <li><a href="http://100.126.253.76">Casa</a></li>
+
+                    <li><a href="http://127.0.0.1:8384">Syncthing</a></li>
+                    <li><a href="127.0.0.1">localhost</a></li>
+                </div>
+            </div>
+
+            <div class="category">
+                <div class="category-title">Social</div>
+                <div class="bookmarks">
+                    <li><a href="https://www.goodreads.com/">GoodReads</a></li>
+                    <li>
+                        <a href="https://app.thestorygraph.com/">StoryGraph</a>
+                    </li>
+                    <li><a href="https://www.youtube.com/">YouTube</a></li>
+                    <li>
+                        <a href="https://www.reddit.com/r/unixporn/"
+                            >Unixporn</a
+                        >
+                    </li>
+                    <li><a href="https://x.com/cl1ngz">Twitter</a></li>
+                </div>
+            </div>
+
+            <div class="category">
+                <div class="category-title">Games</div>
+                <div class="bookmarks">
+                    <li><a href="https://www.chess.com/">Chess</a></li>
+                    <li><a href="https://lichess.org/">Lichess</a></li>
+                    <li><a href="https://monkeytype.com/">MonkeyType</a></li>
+                    <li><a href="https://www.keybr.com/">Keybr</a></li>
+                </div>
+            </div>
+
+            <div class="category">
+                <div class="category-title">Other</div>
+                <div class="bookmarks">
+                    <li>
+                        <a
+                            href="https://calendar.google.com/calendar/u/0/r/week"
+                            >Calendar</a
+                        >
+                    </li>
+                    <li><a href="">...</a></li>
+                    <li><a href="">...</a></li>
+                    <li><a href="">...</a></li>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="category">
-        <div class="bookmarks">
-          <li><a href="https://idm.uci.pb.edu.pl">USOS</a></li>
-          <li><a href="https://calendar.google.com/calendar/u/0/r/week">Calendar</a></li>
-          <li><a href="https://mail.google.com/mail/u/0/#inbox">Mail</a></li>
-          <li><a href="">...</a></li>
-        </div>
-      </div>
-      </div>
-    </div>
-  </body>
+    </body>
 </html>
